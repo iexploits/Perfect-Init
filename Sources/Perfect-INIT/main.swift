@@ -1,7 +1,6 @@
 import PerfectLib
 import PerfectHTTP
 import PerfectHTTPServer
-import Foundation
 
 // server 상수 선언 
 let server = HTTPServer()

@@ -1,6 +1,8 @@
-# Perfect-INIT
+# Perfect-INIT		( v - 0.1 )
 
-Perfect-Swift 프로젝트를 진행하기 위한 기본 스켈레톤 프로젝트 입니다. 해당 git 은 iExpl0its 가 진행하는 Swift-Guide-KOR 프로젝트에 귀속되어 있으며 복잡한 Perfect 프로젝트 환경 설정을 clone 만으로 간편하게 진행할 수 있도록 업로드 하였습니다. 
+Perfect-Swift 프로젝트를 진행하기 위한 기본 스켈레톤 프로젝트 입니다. 해당 git 은 iExpl0its 가 진행하는 Swift-Guide-KOR 프로젝트에 귀속되어 있으며 초보자가 하기에 복잡한 Perfect 프로젝트 환경 설정을 clone 만으로 간편하게 진행할 수 있도록 업로드 하였습니다. 
+
+
 
 -------
 
@@ -8,7 +10,7 @@ Perfect-Swift 프로젝트를 진행하기 위한 기본 스켈레톤 프로젝�
 
 ```
 > mkdir [프로젝트 명]	
-> cd [프로젝트 명]		// 원하는 프로젝트 폴더를 생성 후 이동
+> cd [프로젝트 명]				// 원하는 프로젝트 폴더를 생성 후 이동
 > swift package init		  // Swift package manager 실행
 ```
 
@@ -71,3 +73,20 @@ do {
 }
 ```
 
+
+
+위와 같이 main.swift 까지 정의하였다면 기본적인 Perfect 웹서버의 설정을 마치셨습니다. 웹서버의 실행은 다음과 같이 진행하실 수 있습니다.
+
+
+
+------
+
+##### Perfect 프로젝트 빌드 및 실행
+
+```
+> swift build
+> ./.build/debug/[프로젝트 명]
+[INFO] Starting HTTP server  on 0.0.0.0:8080
+```
+
+위와 같이 빌드 명령어 실행 후, 빌드된 파일을 실행하면 main.swift 에서 정의한 8080 포트로 웹서버가 실행되었다는 INFO msg 가 출력됩니다. 그 후에 브라우저에서 "0.0.0.0/8080" 를 실행해보시면 index.html 이 실행되는 것을 확인할 수 있습니다.
