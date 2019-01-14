@@ -3,11 +3,14 @@ import PerfectHTTP
 import PerfectHTTPServer
 import Foundation
 
+// server 상수 선언 
 let server = HTTPServer()
 
+// server 속성 정의. serverPort : 포트 번호 , documentRoot : web 진입디렉토리
 server.serverPort = 8080
 server.documentRoot = "./src"
 
+// 라우터 정의 및 페이징 핸들러 활용 예제
 var routes = Routes()
 
 routes.add(method: .get, uri: "/page", handler: { request, response in
@@ -26,6 +29,8 @@ routes.add(method: .get, uri: "/page", handler: { request, response in
 
 server.addRoutes(routes)
 
+
+// server 시작
 do {
     try server.start()
 } catch PerfectError.networkError(let error, let message) {
