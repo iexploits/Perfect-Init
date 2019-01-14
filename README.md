@@ -1,12 +1,37 @@
 # Perfect-INIT		( ver  0.1 )
 
-Perfect-Swift 프로젝트를 진행하기 위한 기본 스켈레톤 프로젝트 입니다. 해당 git 은 iExpl0its 가 진행하는 Swift-Guide-KOR 프로젝트에 귀속되어 있으며 초보자가 하기에 복잡한 Perfect 프로젝트 환경 설정을 clone 만으로 간편하게 진행할 수 있도록 업로드 하였습니다. 
+Perfect-Swift 프로젝트를 진행하기 위한 기본 스켈레톤 프로젝트 입니다. 해당 git 은 iExpl0its 가 진행하는 Swift-Guide-KOR 프로젝트에 귀속되어 있으며 초보자가 하기에 복잡한 Perfect 프로젝트 환경 설정을 clone 만으로 간편하게 진행할 수 있도록 업로드 하였습니다. 추후에는 다양한 기본 튜토리얼 또한 함께 제공할 예정입니다.
+
+------
+
+#### 1. Git Clone 으로 바로 설정하기 ( 요구 사항 : Git 설치 )
+
+```
+> mkdir [프로젝트 명]
+> cd [프로젝트 명]
+> git clone https://github.com/iexploits/Perfect-Init.git
+> cd Perfect-Init
+```
+
+위 과정을 마치면 빌드 직전과정까지 전부 마친 상태이다. 바로 3번으로 이동하여 빌드 및 실행을 통해 진행해주시면 됩니다. 이 프로젝트의 골격은 다음과 같습니다.
+
+```
+[프로젝트]
+ └ Sources		// swift 루트 디렉토리
+  └ [프로젝트 명]
+   └ main.swift
+ └ Tests		// 테스트 디렉토리
+ └ src			// 웹루트 디렉토리
+  └ index.html	// 인덱스 페이지
+ Package.swift
+ README.md
+```
 
 
 
 ------
 
-#### Swift Package Manager 활용해 직접 설정하기 ( Swift 4.2 )
+#### 2. Swift Package Manager 활용해 직접 설정하기 ( Swift 4.2 )
 
 ```
 > mkdir [프로젝트 명]	
@@ -84,7 +109,7 @@ do {
 
 ------
 
-#### Perfect 프로젝트 빌드 및 실행
+#### 3. Perfect 프로젝트 빌드 및 실행
 
 ```
 > swift build
